@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .form-group {
+            margin:20px;
+        }
+        label {
+            display: block;
+            font-weight: 200;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        #forgot-pwd{
+            margin-left: 40px;
+            font-size: small;
+        }
+        #forgot-pwd a{
+            color: #007BFF;
+        }
+        #sign-up{
+            color: #0056b3;
+            border: none;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Projectopedia</h1>
+    <br/>
+    <form onsubmit="signUp()" id="signUpForm" class="card-body px-5 py-4">
+
+        <small>
+            <h6><span id="error" style="color: crimson"></span></h6>
+        </small>
+
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Sign-Up">
+        </div>
+        <div>
+            <span>Already have an Account?</span>
+            <a href="login.html">login</a>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="signup.js"></script>
+    
+</body>
+</html>

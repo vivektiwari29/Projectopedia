@@ -1,0 +1,366 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+
+    font-family: Arial, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+    header {
+        background-color: white; /* Change the header background color to white */
+        color: #0077b5; /* Change the text color to blue */
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between; /* Align content horizontally */
+        align-items: center; /* Align content vertically */            
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        /* z-index: 100;       Ensure the header is above other content */
+    }
+
+header .logo {
+    position: relative;
+    left: 16vw;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px;
+    width: 40px;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar .logo img {
+    margin-right: 0; /* Remove the margin to align the logo and search bar */
+}
+
+header .search-input {
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 25px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+header .search-btn {
+    background-color: #0096db;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #0077b5;
+}
+main{
+    /* margin-top: 50px; */
+    height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+}
+
+
+/* Main container styles */
+.container {
+    gap: 50px;
+   max-width: 90vw;
+    /* margin: 20px auto; */
+    /* margin-top: 150px; */
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    position: relative;
+    top: 20px;
+}
+
+/* Left sidebar styles */
+.left-sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 1px solid rgb(103, 97, 97);
+    position: relative;
+    left: 0;
+    top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background-color: #0077b5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.profile-name {
+    font-size: 20px;
+}
+
+.profile-info {
+    font-size: 16px;
+}
+
+
+
+.details2 ul{
+    list-style: circle;
+}
+.details2 ul li{
+    margin: 10px;
+    color: rgb(154, 154, 232);
+}
+
+/* Main content area */
+.main-content {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Feed styles */
+.feed {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.feed h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feed p {
+    font-size: 16px;
+}
+
+/* New post input area styles */
+.new-post-input {
+    background-color: #f0f2f5;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.new-post-input textarea {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 16px;
+}
+
+.post-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-options input[type="file"] {
+    display: none;
+}
+
+.media-button, .document-button, .code-button {
+    cursor: pointer;
+    background-color: white;
+    color: #0077b5;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.media-button:hover, .document-button:hover, .code-button:hover {
+    background-color: #0077b5;
+    color: white;
+}
+
+.post-button {
+    background-color: #9fc9df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Post styles */
+.post {
+    /* display: none; */
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.post-top{
+    display: flex;
+}
+.profile-image2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 2px;
+    background-color: #0077b5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.post-user {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 0px;
+}
+.post-top button{
+    position: relative;
+    left: 410px;
+}
+
+
+.post-image{
+
+    width: 520x;
+    height: 300px;
+    /* border: 1px solid black; */
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.post-image img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post-options {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.post-options span {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Right sidebar styles */
+.right-sidebar {
+    width: 250px;
+    padding: 20px;
+    border-left: 1px solid rgb(103, 97, 97);
+
+    margin-left: 20px;
+    background-color: #ffffff;
+    position: relative;
+    top: 20px;
+    right: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section {
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.projects-list {
+    list-style: outside;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-list-item {
+
+    margin: 10px 0;
+    text-align: left;
+}
+
+.projects-list-item a {
+    text-decoration: none;
+    color: #333333;
+}
+.help{
+    color: rgb(154, 154, 232);
+    margin: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: white; /* Change the footer background color to white */
+    color: #0077b5; /* Change the text color to blue */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push the footer to the bottom */
+}
